@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: #f4f0e8;
+    color: #171717;
+    font-family: "DM Sans", sans-serif;
+    padding: 40px 24px 80px;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 340px;
+    height: 340px;
+    background: #ff6b35;
+    border-radius: 50%;
+    top: -160px;
+    right: -100px;
+    z-index: -1;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    width: 250px;
+    height: 250px;
+    background: #b7ff5a;
+    border-radius: 45% 55% 60% 40%;
+    bottom: -90px;
+    left: -80px;
+    transform: rotate(25deg);
+    z-index: -1;
+}
+
+h1 {
+    font-family: "Syne", sans-serif;
+    font-size: clamp(3rem, 8vw, 7rem);
+    line-height: 0.9;
+    letter-spacing: -0.07em;
+    max-width: 1100px;
+    margin: 20px auto 55px;
+    text-transform: uppercase;
+}
+
+.specials {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+.specials input {
+    width: 100%;
+    height: 70px;
+    border: 2px solid #171717;
+    background: #fff7d6;
+    padding: 0 20px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.specials input:focus {
+    box-shadow: 6px 6px 0 #171717;
+    transform: translate(-3px, -3px);
+}
+
+#find {
+    border: 2px solid #171717;
+    background: #171717;
+    color: white;
+    min-height: 70px;
+    font-family: "Syne", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#find:hover {
+    background: #b7ff5a;
+    color: #171717;
+    box-shadow: 8px 8px 0 #171717;
+    transform: translate(-4px, -4px);
+}
+
+.specials > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 2px solid #171717;
+    margin-top: 20px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+#title {
+    grid-column: 1 / -1;
+    font-family: "Syne", sans-serif;
+    font-weight: 800;
+    font-size: clamp(2rem, 5vw, 4.8rem);
+    line-height: 0.95;
+    letter-spacing: -0.05em;
+    padding: 28px;
+    background: #ffca3a;
+    border-bottom: 2px solid #171717;
+}
+
+.specials img {
+    grid-column: 1 / -1;
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 2px solid #171717;
+}
+
+#fat,
+#carb,
+#protein {
+    padding: 24px;
+    min-height: 85px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#fat,
+#carb {
+    border-right: 2px solid #171717;
+}
+
+#fat {
+    background: #ff8fab;
+}
+
+#carb {
+    background: #bde0fe;
+}
+
+#protein {
+    background: #caffbf;
+}
+
+#fat::before {
+    content: "FAT";
+    font-family: "Syne", sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+}
+
+#carb::before {
+    content: "CARBS";
+    font-family: "Syne", sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+}
+
+#protein::before {
+    content: "PROTEIN";
+    font-family: "Syne", sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+}
+
+#switch {
+    min-height: 70px;
+    border: 2px solid #171717;
+    background: #ff6b35;
+    font-family: "Syne", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#switch:hover {
+    background: #f4f0e8;
+    box-shadow: 8px 8px 0 #171717;
+    transform: translate(-4px, -4px);
+}
+
+@media (max-width: 720px) {
+    body {
+        padding: 24px 16px 60px;
+    }
+
+    h1 {
+        margin-bottom: 35px;
+    }
+
+    .specials > div {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #title {
+        grid-column: 1 / -1;
+    }
+
+    .specials img {
+        grid-column: 1 / -1;
+        height: 300px;
+    }
+
+    #fat,
+    #carb,
+    #protein {
+        padding: 14px 10px;
+        min-height: 75px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 6px;
+        text-align: center;
+        font-size: 0.95rem;
+    }
+
+    #fat::before,
+    #carb::before,
+    #protein::before {
+        font-size: 0.7rem;
+    }
+}
