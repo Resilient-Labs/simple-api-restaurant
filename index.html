@@ -1,29 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Restaurant Special Generator</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <div id="search-container">
-        <input type="text" placeholder="City Name" id="cityInput">
-        <input type="text" placeholder="Country" id="country-name">
-        <button id="searchBtn">Search</button>
-    </div>
+    <main>
+        <header>
+            <h1>Restaurant Special Generator</h1>
+            <p>Generate a meal idea based on cuisine and diet type.</p>
+        </header>
 
-    <div id="weather-container">
-        <h1 id="cityName">City:</h1>
-        <h2 id="country"></h2>
-        <h2 id="temperature">Temperature</h2>
-        <h2 id="condition">Conditions</h2>
-        <img src="" alt="" id="image">
-        <h2 id="humidity"></h2>
-    </div>
+        <section class="search-area">
+            <input type="text" name="cuisine" id="cuisine-input" placeholder="Cuisine">
+            <input type="text" name="diet" id="diet-type" placeholder="Diet (optional)">
+            <button id="generate">Generate</button>
+        </section>
+
+        <section class="recipe">
+            <div class="image-container">
+                <img src="" id="image" alt="Generated meal">
+            </div>
+
+            <div class="recipe-info">
+                <h2 id="recipe-title">Meal Name</h2>
+
+                <div class="meal-details">
+                    <div>
+                        <h3>Servings</h3>
+                        <p id="servings">--</p>
+                    </div>
+                    <div>
+                        <h3>Prep</h3>
+                        <p id="prep-time">--</p>
+                    </div>
+                    <div>
+                        <h3>Cooking</h3>
+                        <p id="cook-time">--</p>
+                    </div>
+                </div>
+
+                <div id="instructions">
+                    <p>Meal information will appear here.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
     <script src="js/main.js"></script>
 </body>
-
 </html>

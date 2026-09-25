@@ -1,25 +1,34 @@
 
-document.getElementById('searchBtn').addEventListener('click', searchWeather)
 
-function searchWeather() {
+document.getElementById('generate').addEventListener('click', findRecipe)
 
-    const API_KEY = '2625a992af5449e1a3025843262309'
-    const city = document.querySelector('#cityInput').value
-    const country = document.querySelector('#country-name').value
-    const url = `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}, ${country}`
+function findRecipe() {
+    const API = '52d0f4a60e6f406791580f75a31bd6cc'
+    const cuisine = document.querySelector('#cuisine-input').value
+    const diet = document.querySelector('#diet-type').value
+    const url = `https://api.spoonacular.com/recipes/complexSearch?cuisine=${cuisine}&diet=${diet}&fillIngredients=true&addRecipeInformation=true&addRecipeInstructions=true&apiKey=${API}`
 
     fetch(url)
         .then(response => response.json())
         .then(data => {
             console.log(data)
-            document.querySelector('#cityName').innerText = "City: " + data.location.name + ", " + data.location.region
-            document.querySelector('#temperature').innerText = "Temperature: " + data.current.temp_f + " °F"
-            document.querySelector('#condition').innerText = "Current conditions: " + data.current.condition.text
-            document.querySelector('#image').src = 'https:' + data.current.condition.icon
-            document.querySelector('#humidity').innerText = 'Humidity: ' + data.current.humidity + "%"
-            document.querySelector('#country').innerText = data.location.country
+
+            const returnedArray = data.results
+            const random = Math.floor(Math.random() * returnedArray.length)
+            
+            let cookingMinutes = data.results[random].cookingMinutes
+            let prepMinutes = data.results[random].preparationMinutes
+
+            document.querySelector('#image').src = data.results[random].image
+            document.querySelector('#recipe-title').innerText = data.results[random].title
+            document.querySelector('#cook-time').innerText = cookingMinutes + ' minutes' ?? "n/a"
+            document.querySelector('#prep-time').innerText = prepMinutes + ' minutes' ?? "n/a"
+            document.querySelector('#servings').innerText = "Makes " + data.results[random].servings + " servings"
+            document.querySelector('#instructions').innerHTML = data.results[random].summary
         })
         .catch(error => {
-            alert('Please enter a city.', error)
+            console.error(error)
+            document.querySelector('#recipe-title').innerText = 'Something went wrong'
+            document.querySelector('#instructions').innerHTML = '<p>Check your API key and try again.</p>'
         })
 }
