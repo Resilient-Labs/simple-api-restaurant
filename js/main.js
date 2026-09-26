@@ -21,8 +21,8 @@ function findRecipe() {
 
             document.querySelector('#image').src = data.results[random].image
             document.querySelector('#recipe-title').innerText = data.results[random].title
-            document.querySelector('#cook-time').innerText = cookingMinutes + ' minutes' ?? "n/a"
-            document.querySelector('#prep-time').innerText = prepMinutes + ' minutes' ?? "n/a"
+            document.querySelector('#cook-time').innerText = cookingMinutes + ' minutes' ?? ''
+            document.querySelector('#prep-time').innerText = prepMinutes + ' minutes' ?? ''
             document.querySelector('#servings').innerText = "Makes " + data.results[random].servings + " servings"
             document.querySelector('#instructions').innerHTML = data.results[random].summary
         })
