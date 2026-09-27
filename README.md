@@ -1,22 +1,30 @@
 # 🍽️ Project: Simple API 2 - Restaurant
+Users search for a meal or ingredient, such as `chicken`, `pasta`, or `salad`. The app uses the Spoonacular API to return recipe results, then uses the selected recipe ID to request and display the full recipe information.
 
-### Goal: Build a simple front-end app that displays data returned from an api that would be beneficial to someone working at or managing a restaurant. 
+## Project Goal
+Build a simple front-end application that uses data returned from one API request to make a second API request and create a useful restaurant recipe tool.
 
-### How to submit your code for review:
+## How It Works
+- User searches for a recipe or ingredient
+- Spoonacular Recipe Search API
+- Returns recipe cards:id, title, image
+- User selects a recipe
+- The app sends the returned recipe ID to the Spoonacular Recipe Information endpoint
+- The app displays the complete recipe details
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## Technologies Used
+- HTML
+- CSS
+- JavaScript
+- Fetch API
+- Spoonacular API
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+## API Used
+### Spoonacular API
+Spoonacular provides recipe, ingredient, food, and nutrition data.
+
+## Future Improvements
+- Add filters for cuisine, diet, meal type, or cooking time.
+- Allow users to save favorite recipes.
+- Add nutrition information.
+- Add a shopping-list feature.
