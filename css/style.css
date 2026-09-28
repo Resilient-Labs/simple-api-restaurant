@@ -1,0 +1,112 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #f5a7f1b2, #98e990be);
+  color: #333;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-weight: 200;
+}
+
+input, button {
+  padding: 10px;
+  margin: 5px;
+  font-size: 1rem;
+}
+
+input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  background: #cf7676;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #555;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+main,
+section {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+section {
+  padding: 20px;
+}
+
+
+#userinput {
+  margin: 20px auto;
+}
+
+#output {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  min-height: 100px;
+}
+
+/******************************************
+/* RESPONSIVE
+/*******************************************/
+
+@media screen and (max-width: 968px) {
+  body {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  input,
+  button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  section {
+    padding: 10px;
+  }
+}
