@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Recipe Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Restaurant Recipe Finder</h1>
+    <p>Look up recipes, ingredients, and prep steps for the kitchen.</p>
+
+    <!-- form so hitting Enter also searches -->
+    <form id="search-form">
+      <input type="text" id="search-input" placeholder="e.g. chicken">
+      <button type="submit">Search</button>
+      <button type="button" id="random-button">Random Meal</button>
+    </form>
+
+    <p id="message"></p>
+    <div id="results"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
