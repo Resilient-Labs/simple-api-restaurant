@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #333 url("kitchen-stuff.avif") center / cover fixed;
+}
+
+/* white box so the text is readable over the photo */
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.93);
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+input,
+button {
+  padding: 8px;
+  font-size: 16px;
+}
+
+#search-input {
+  flex: 1;
+}
+
+.meal {
+  border-top: 1px solid #999;
+  padding: 10px 0 20px;
+}
+
+.meal p {
+  margin: 4px 0;
+}
+
+.meal img {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: 8px 0;
+}
+
+/* instructions come with \r\n line breaks, this keeps the paragraphs */
+.instructions {
+  white-space: pre-line;
+  line-height: 1.5;
+}
+
+.error {
+  color: #b00020;
+}
