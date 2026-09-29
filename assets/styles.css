@@ -1,0 +1,79 @@
+/* 
+=======================
+BORDER BOX HACK
+=======================
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/*
+========================
+CLEARFIX HACK
+========================
+*/
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+body{
+    background-color: rgb(70, 121, 233);
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: rgb(170, 129, 18); 
+    padding-top: 2rem;
+    padding-left: 5rem;
+    padding-bottom: 1.5rem;
+}
+.firstSection{
+    display: flex;
+    flex-direction: row;
+    border-radius: 0.8rem;
+    width: 60%;
+    margin: auto;
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(170, 129, 18); 
+    padding-top: 2rem;
+    padding-left: 5rem;
+    padding-bottom: 1.5rem;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(170, 129, 18); 
+    padding-top: 2rem;
+    padding-left: 5rem;
+    padding-bottom: 1.5rem;
+}
+.reportResults{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.8rem;
+    width: 60%;
+    margin: auto;
+    margin-top: 4rem;
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}

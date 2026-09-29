@@ -2,21 +2,12 @@
 
 ### Goal: Build a simple front-end app that displays data returned from an api that would be beneficial to someone working at or managing a restaurant. 
 
-### How to submit your code for review:
+### Project Description: I used the FDA Food Enforcement API to check any potential food recalls given a date range and city that the user inputs
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+![screenshot of webpage](assets/photos/screenshot.png)
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+### Things I learned: 
+
+### - This API's documentation can be confusing upon first read. I suggest carfully reading the search parameter documentation.
+
+### - The date ranges need to be wildly broad at times when cities did NOT experience many food recalls.
