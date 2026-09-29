@@ -1,22 +1,35 @@
 # 🍽️ Project: Simple API 2 - Restaurant
 
-### Goal: Build a simple front-end app that displays data returned from an api that would be beneficial to someone working at or managing a restaurant. 
+Description
 
-### How to submit your code for review:
+Daily Special Recipe Ideas is a simple web application that helps users find recipe ideas based on a main ingredient.
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+The user enters an ingredient and clicks the Get Recipe button. The application retrieves recipe information and displays multiple recipe options for the user.
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+This project was created to practice working with APIs, JavaScript fetch(), user input, and displaying API data on a webpage.
+
+🛠️ Tech Stack
+
+HTML — Creates the structure of the application, including the ingredient input, button, recipe names, images, and recipe information.
+
+JavaScript — Handles the user's input, makes the API request, retrieves recipe data, and displays the results in the DOM.
+
+API — Provides the recipe information used by the application.
+
+Features
+
+Search for recipes using a main ingredient
+
+Display multiple recipe options
+
+Display recipe names
+
+Display recipe images
+
+Display recipe information
+
+<img width="3160" height="3160" alt="anh-nguyen-kcA-c3f_3FE-unsplash" src="https://github.com/user-attachments/assets/e6611d4a-5602-4b7a-8054-52192c419568" />
+
+I completed the challenge: 4
+I feel good about my code: 2
+While it is functional , there is still some debugging that needs to be done.
