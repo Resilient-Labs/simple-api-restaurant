@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: hidden;
+    background: honeydew;
+}
+
+header,
+footer {
+    flex-shrink: 0;
+    padding: 1rem;
+    background: seagreen;
+    color: white;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+section {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: white;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+p {
+    padding-bottom: 1rem;
+    line-height: 1.5;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 0.5rem;
+    padding: 0.75rem;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+#stateName {
+    width: 5rem;
+}
+
+button {
+    padding: 0.75rem 1rem;
+    border: 1px solid black;
+    border-radius: 4px;
+    background: seagreen;
+    color: white;
+}
+
+button:hover {
+    background: darkgreen;
+}
+
+a {
+    color: darkgreen;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    padding-bottom: 0.5rem;
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+#reportsFoodEnforcement section {
+    margin-bottom: 1rem;
+}
+
+#reportsFoodEnforcement h2 {
+    margin-bottom: 1rem;
+}
+
+#reportsFoodEnforcement div {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid lightgray;
+}
+
+#reportsFoodEnforcement span:first-child {
+    font-weight: bold;
+}
+
+footer {
+    font-size: 1rem;
+}

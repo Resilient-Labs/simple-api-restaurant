@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Check Food Enforcement</title>
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Check Food Enforcement</h1>
+        </header>
+
+        <main>
+            <section>
+                <div>
+                    <p>Enter a city and state. We'll check openFDA for the last decade and return up to five Food
+                        Enforcement Reports
+                        supplied by the FDA.</p>
+                    <p>FDA DISCLAIMER: "Do not rely on openFDA to make decisions regarding medical care. While we make
+                        every effort to ensure that data is accurate, you should assume all results are unvalidated. We
+                        may limit or otherwise restrict your access to the API in line with our Terms of Service."</p>
+                    <p>Frequency of API updates: Weekly.</p>
+                </div>
+                <!-- <div>
+                    <label for="dateFrom">From:</label>
+                    <input type="date" id="dateFrom">
+                    <label for="dateTO">To:</label>
+                    <input type="date" id="dateTo">
+                    <div>If you leave these dates blank, the last five reports found will be displayed.</div>
+                </div> -->
+                <div>
+                    <label for="cityName">City:</label>
+                    <input type="text" id="cityName">
+                    <label for="stateName">State:</label>
+                    <input type="text" id="stateName" maxlength="2">
+                    <button>Search</button>
+                </div>
+                <div>
+                    <a href="https://www.fda.gov/safety/enforcement-reports/enforcement-report-information-and-definitions"
+                        target="_blank">See
+                        Enforcement Report Information and Definitions Here</a>
+                </div>
+            </section>
+
+            <section>
+                <h2>FDA Food Enforcement Report(s)</h2>
+                <div id="reportsFoodEnforcement"></div>
+            </section>
+        </main>
+
+        <footer>
+            <small>Made by: Niles</small>
+        </footer>
+
+        <script type="text/javascript" src="./js/main.js"></script>
+    </body>
+
+</html>
