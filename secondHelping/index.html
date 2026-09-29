@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta name="description" content="Helps a restaurant find nearby places to donate surplus food">
+    	<meta name="keywords" content="food donation">
+
+		<title>Restaurant Food Donation Finder</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<main class="page">
+
+			<h1>SECOND HELPING</h1>
+			<p class="info"><strong>At closing time, find nearby food banks, pantries, and soup kitchens that can take your restaurant's extra food.</strong></p>
+
+			<form id="donation-form">
+
+				<label for="zip">Zip Code</label>
+				<input type="text" id="zip" name="zip" placeholder="5-digit zip" inputmode="numeric" required>
+
+				<label for="radius">Search Radius (miles)</label>
+				<select id="radius" name="radius">
+					<option value="5">5 miles</option>
+					<option value="10">10 miles</option>
+					<option value="25">25 miles</option>
+					<option value="50">50 miles</option>
+				</select>
+
+				<button type="submit">Find Donation Sites</button>
+
+			</form>
+
+			<div id="results"></div>
+
+		</main>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
