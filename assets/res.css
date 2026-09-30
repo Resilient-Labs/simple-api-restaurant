@@ -1,0 +1,22 @@
+
+body{
+    padding: 10rem 15%;
+    background: #f1bc58;
+    font-family: 'Roboto Condensed', 'Helvetica', sans-serif;
+}
+.menu{
+    padding: 2rem 15%;
+    border: 2px solid #000;
+    border-radius: 20px;
+    background: #f1d091;
+}
+h3{
+    font-size: 1.4rem;
+}
+input, button{
+    font-size: 1.4rem;
+}
+li{
+    list-style: none;
+    font-size: 1.4rem;
+}

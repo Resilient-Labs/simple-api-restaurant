@@ -1,22 +1,24 @@
-# 🍽️ Project: Simple API 2 - Restaurant
+# GoodEats
 
-### Goal: Build a simple front-end app that displays data returned from an api that would be beneficial to someone working at or managing a restaurant. 
+A simple front-end web app for restaurant owners, managers, and staff. Search for a food and GoodEats shows its nutrition facts, so the restaurant can answer customer questions and add accurate nutrition info to its menu.
 
-### How to submit your code for review:
+![Screenshot](./images/restaurantapp.png)
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## Why It's Useful
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+Customers ask about calories, protein, carbs, and more, and many are tracking what they eat. Some restaurants also need to show nutrition information on their menus. GoodEats gives staff a fast way to look up a food's nutrition facts without digging through labels or guessing.
+
+## How It Works
+
+1. The user types a food into the search bar, like "pizza" or "burger."
+2. The app sends a request to the Dietly API.
+3. The nutrition facts for that food are displayed on the page as a list.
+4. Each new search clears the old results, so only the current food is shown.
+
+## How It's Made
+
+**Tech used:** HTML, CSS, JavaScript
+
+**API:** [Dietly](https://api.getdietly.com)
+
+The page is built with HTML and styled with CSS. JavaScript takes the food the user searches for, uses the Fetch API to request its nutrition data, parses the JSON response, and builds a list of the results in the DOM. Before each new search, the results list is cleared so old results don't pile up.
