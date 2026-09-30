@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Restaurant Ingredient Checker</title>
+  </head>
+
+  <body>
+    <main class="app">
+      <header>
+        <h1>Restaurant Ingredient Checker</h1>
+        <p>Look up packaged restaurant ingredients using their barcode.</p>
+      </header>
+
+      <section class="search-section">
+        <label for="barcodeInput"> Product Barcode </label>
+
+        <input
+          type="text"
+          id="barcodeInput"
+          placeholder="Example: 79845457343467"
+        />
+
+        <button id="searchButton">Search</button>
+      </section>
+
+      <p id="message"></p>
+
+      <section id="productResult"></section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
