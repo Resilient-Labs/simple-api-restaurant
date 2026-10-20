@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f1ed;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#Country {
+    display: block;
+    width: 300px;
+    padding: 12px;
+    margin: 0 auto 15px auto;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    display: block;
+    width: 300px;
+    padding: 12px;
+    margin: 0 auto 30px auto;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#list {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.festival-card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.festival-card h2 {
+    margin-top: 0;
+}
+
+.festival-card p {
+    line-height: 1.5;
+}
