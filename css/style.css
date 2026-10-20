@@ -1,0 +1,19 @@
+body{
+    background-image: url('../img/recall.jpeg');
+    background-repeat: no-repeat;
+    min-height: 500px;
+
+    
+}
+
+.recall{
+    backdrop-filter: blur(10px);
+    text-align: center;
+    color: rgb(34, 34, 88);
+    min-height: auto;
+    max-width: 400px;
+    
+    margin: auto;
+
+    place-items: center;
+}

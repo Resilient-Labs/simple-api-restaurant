@@ -1,22 +1,47 @@
-# 🍽️ Project: Simple API 2 - Restaurant
+# Food recall lookup app
 
-### Goal: Build a simple front-end app that displays data returned from an api that would be beneficial to someone working at or managing a restaurant. 
+A simple front-end app that displays data from an FDA api to help restaurant staff and managers. 
+This app allows users look up recent food recalls according to the location the user enters.
 
-### How to submit your code for review:
+- Screenshots:
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+![User Page](./img/userpage.png)
+![Search Result](./img/result.png)
 
-Example:
+## How It's Made
+
+**Tech Used:** HTML, CSS, JavaScript, FDA api
+
+The app uses JavaScript's `fetch()` to request data from FDA api and displays the result on the page. 
+
+
+## Getting Started
+
+1. Clone this repository
+
+```bash
+   git clone https://github.com/sabrinalindev/restaurant.git
 ```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+
+2. Open `index.html` in your browser
+
+## How to Use
+
+1. Step 1:  Enter the city you want to look up
+2. Step 2:  Click the Search button
+3. Step 3:  View the results displayed on the page
+
+## Features
+
+- Fetches live data from the FDA api
+- No installation or dependencies needed
+
+## Why This Stack
+
+- **JavaScript (`fetch`)**: Handles the API request and renders the data dynamically without a page reload.
+- **HTML/CSS**: Simple, fast to load, and perfect for a lightweight front-end app.
+- **FDA api**: Free, easy to use, and provides data useful for food recall.
+
+## Future Improvements
+
+- Display multiple recent data results
