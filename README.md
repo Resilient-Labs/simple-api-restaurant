@@ -1,22 +1,15 @@
-# 🍽️ Project: Simple API 2 - Restaurant
+# Meal Finder
 
-### Goal: Build a simple front-end app that displays data returned from an api that would be beneficial to someone working at or managing a restaurant. 
+Enter a calorie limit, get up to ten recipes that fit, each with fat, carbs, protein, and a photo. Don't like the first one? Hit "Something else" and cycle through the rest.
 
-### How to submit your code for review:
+![Meal Finder screenshot](screenshot.jpg)
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## How the code works
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+`getFood()` sends your calorie cap to Spoonacular's nutrient search and asks for ten results. They land in a module-level `meals` array, the `currentMeal` index resets to zero, and `displayMeal()` renders the first one: title, macros, and image.
+
+The "Something else" button calls `switchMeal()`, which bumps the index and wraps back to zero at the end of the list, then re-renders. It's a tiny carousel pattern, and I like how little machinery it needs: one shared array, one index, one render function. No framework, no state library, just an integer and a wraparound check. The discipline that makes it work is the reset: every new search zeroes the index before rendering, so you can never end up pointing past the end of a fresh, shorter list. That's the entire class of carousel bugs, prevented by one line.
+
+The hardest part was that index lifecycle. It has to reset on every new search and wrap cleanly at the end of the list, or you get blank cards and off-by-one meals.
+
+Spoonacular API, plain JavaScript. My code is on the `answer` branch.
