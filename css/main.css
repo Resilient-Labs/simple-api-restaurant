@@ -1,0 +1,61 @@
+:root {
+    --dust-grey: #dad7cdff;
+    --dry-sage: #a3b18aff;
+    --fern: #588157ff;
+    --hunter-green: #3a5a40ff;
+    --pine-teal: #344e41ff;
+
+    --light-bronze: #cb997eff;
+    --desert-sand: #ddbea9ff;
+    --powder-petal: #ffe8d6ff;
+    --ash-grey: #b7b7a4ff;
+    --dry-sage: #a5a58dff;
+    --dusty-olive: #6b705cff;
+
+    --burnt-peach: #dd6e42ff;
+    --pearl-beige: #e8dab2ff;
+    --blue-slate: #4f6d7aff;
+    --pale-sky: #c0d6dfff;
+    --alabaster-grey: #eaeaeaff;
+
+    --main-font: "Montserrat"
+}
+
+html {
+    font-size: 62.50%;
+}
+
+body {
+    background: var(--pale-sky);
+    color: var(--pine-teal);
+    font-family: var(--main-font);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+
+    div {
+        background: var(--dust-grey);
+        min-height: 5rem;
+        max-width: 130rem;
+        font-size: 3rem;
+        border-radius: 2rem;
+        color: var(--dusty-olive);
+        padding: 2rem;
+
+    }
+}
+
+h1, h2{
+    font-family: "Ranchers", sans-serif;
+    text-align: center;
+    font-size: 5rem;
+}
+
+img{
+    max-height: 30rem;
+    max-width: 30rem;
+    border-radius: 2rem;
+}
