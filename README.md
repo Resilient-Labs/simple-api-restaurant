@@ -2,6 +2,8 @@
 
 Enter a calorie limit, get up to ten recipes that fit, each with fat, carbs, protein, and a photo. Don't like the first one? Hit "Something else" and cycle through the rest.
 
+**Live site:** https://simple-api-restaurant.vercel.app
+
 ![Meal Finder screenshot](screenshot.jpg)
 
 ## How the code works
