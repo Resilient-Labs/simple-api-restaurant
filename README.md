@@ -3,6 +3,9 @@
 A simple front-end app that displays data from an FDA api to help restaurant staff and managers. 
 This app allows users look up recent food recalls according to the location the user enters.
 
+- Check it out:
+https://restaurant-red-eta-63.vercel.app/
+
 - Screenshots:
 
 ![User Page](./img/userpage.png)
