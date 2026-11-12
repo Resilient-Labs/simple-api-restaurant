@@ -4,6 +4,8 @@ A simple front-end web app for restaurant owners, managers, and staff. Search fo
 
 ![Screenshot](./images/restaurantapp.png)
 
+[Try it here](https://exbrto.github.io/RestaurantNutritionApp/)
+
 ## Why It's Useful
 
 Customers ask about calories, protein, carbs, and more, and many are tracking what they eat. Some restaurants also need to show nutrition information on their menus. GoodEats gives staff a fast way to look up a food's nutrition facts without digging through labels or guessing.
