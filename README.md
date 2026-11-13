@@ -60,3 +60,5 @@ cd Food-Recall-App-
 - Consider adding a filter for recall classification so users can see only Class I recalls.
 - Try adding a date range so users can limit results to recent recalls.
 - Try changing the styling in `assets/styles.css` to make it your own.
+
+## Happy Coding!
