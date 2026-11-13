@@ -47,7 +47,7 @@ To access this web application, [click here](https://priscilla-ruilova.github.io
 1. Clone this repository or the one I forked from above:
 ```bash
 git clone https://github.com/priscilla-ruilova/Food-Recall-App-.git
-
+```
 
 2. Navigate to the project
 ```bash
