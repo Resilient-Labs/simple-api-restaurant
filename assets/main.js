@@ -62,7 +62,7 @@ function runReport(){
         .then (res => res.json())
         .then (data=> {
             console.log(data)
-            
+            document.querySelector('.resultContainer').style.display = 'block';
             if (data.results[0].classification === 'Class I'){
                 document.querySelector('h2').innerText= data.results[0].classification
                 document.querySelector('h3').innerText = 'Take IMMEDIATE action. There is a high probability that eating the food will cause serious adverse health consequences or death. (e.g. E.coli or salmonella in food)'

@@ -3,7 +3,8 @@
 BORDER BOX HACK
 =======================
 */
-
+/* #292524- cjargol
+#F8FAFC - offwhite */
 *{
     box-sizing: border-box;
     margin: 0;
@@ -29,13 +30,13 @@ CLEARFIX HACK
 }
 
 body{
-    background-color: rgb(70, 121, 233);
+    background-color: #F87171 ;
 }
 h1{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3rem;
     font-weight: 600;
-    color: rgb(170, 129, 18); 
+    color: #1E293B;
     padding-top: 2rem;
     padding-left: 5rem;
     padding-bottom: 1.5rem;
@@ -44,15 +45,19 @@ h1{
     display: flex;
     flex-direction: row;
     border-radius: 0.8rem;
-    width: 60%;
-    margin: auto;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
     font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+.firstSection input{
+    font-size: 1.3rem;
 }
 h2{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
     font-weight: 600;
-    color: rgb(170, 129, 18); 
+    color: #450A0A; 
     padding-top: 2rem;
     padding-left: 5rem;
     padding-bottom: 1.5rem;
@@ -61,19 +66,37 @@ h3{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
     font-weight: 600;
-    color: rgb(170, 129, 18); 
+    color: #450A0A; 
     padding-top: 2rem;
     padding-left: 5rem;
     padding-bottom: 1.5rem;
+}
+.resultContainer{
+    display: none;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    width: 80%;
+    margin: 2rem auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .reportResults{
     display: flex;
     flex-direction: column;
     border-radius: 0.8rem;
     width: 60%;
+    color: #1E293B;
     margin: auto;
     margin-top: 4rem;
     font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
