@@ -4,7 +4,7 @@ A quick lookup tool for restaurant staff. Enter the barcode from a packaged ingr
 
 > Built a simple front-end app that displays data returned from an API that would be beneficial to someone working at or managing a restaurant.
  
-🔗 **Live Demo:** [kareemahb.github.io/simple-api-restaurant](https://kareemahb.github.io/api-restaurant/)
+🔗 **Live Demo:** [kareemahb.github.io/api-restaurant](https://kareemahb.github.io/api-restaurant/)
  
 ![Restaurant Ingredient Checker showing a barcode search and a product card](image.png)
  
