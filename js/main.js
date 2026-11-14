@@ -18,24 +18,24 @@ function find_recipes() {
             //get a random recipe from the 5 that generated
             let random_num = Math.floor(Math.random() * 5)
             //find the food id to query for the recipe
-            let food_id = recipes[random_num].id 
+            let food_id = recipes[random_num].id
             // find the food name so it can be displayed
             let food_name = recipes[random_num].title
             console.log(food_name, food_id)
-            
+
 
             fetch(`https://api.spoonacular.com/recipes/${food_id}/analyzedInstructions?apiKey=${spoonacular_api_key}`)
                 .then(res => res.json())
                 .then(new_recipe => {
                     console.log(new_recipe)
                     console.log(new_recipe[0].steps)
-                    
+
                     let i = 0
                     //Clear the screen of any previous steps
                     step_list.innerHTML = ''
 
                     new_recipe[0].steps.forEach(step => {
-                        
+
                         //create a space for the new step
                         let li = document.createElement('li')
                         //move the step into the li
@@ -46,5 +46,5 @@ function find_recipes() {
                     });
 
                 })
-    })
+        })
 }
