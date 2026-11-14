@@ -2,6 +2,9 @@
 
 A front-end app for someone working in a restaurant kitchen: type in the ingredients you have on hand, and it gives you a random dish you can make with them, complete with step-by-step cooking instructions.
 
+
+Live Link: https://tbrown320.github.io/simple-api-restaurant/
+
 ![Screenshot of recipe from ingredients](Screenshot.png)
 
 ## What it does
