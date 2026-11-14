@@ -2,6 +2,8 @@
 
 A front-end app for someone working in a restaurant kitchen: type in the ingredients you have on hand, and it gives you a random dish you can make with them, complete with step-by-step cooking instructions.
 
+![Screenshot of recipe from ingredients](Screenshot.png)
+
 ## What it does
 
 - You enter ingredients in a text box, separated by commas — for example, `chicken, rice, garlic`.
